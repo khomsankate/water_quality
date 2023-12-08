@@ -18,14 +18,14 @@ if uploaded_file is not None:
     st.header("Enter Water Quality Parameters")
 
     ph = st.number_input('Enter PH:', min_value=0.0, max_value=14.0, value=7.0)
-    hardness = st.number_input('Enter Hardness:', min_value=47.0, value=323.0)
-    solids = st.number_input('Enter Solids:', min_value=323.0, value=61227.0)
+    hardness = st.number_input('Enter Hardness:', min_value=0.0, value=323.0)
+    solids = st.number_input('Enter Solids:', min_value=0.0, value=61227.0)
     chloramines = st.number_input('Enter Chloramines:', min_value=1.0, value=13.0)
-    sulfate = st.number_input('Enter Sulfate:', min_value=129.0, value=481.0)
-    conductivity = st.number_input('Enter Conductivity:', min_value=181.0, value=753.0)
-    organic_carbon = st.number_input('Enter Organic Carbon:', min_value=2.0, value=28.0)
+    sulfate = st.number_input('Enter Sulfate:', min_value=0.0, value=481.0)
+    conductivity = st.number_input('Enter Conductivity:', min_value=0.0, value=753.0)
+    organic_carbon = st.number_input('Enter Organic Carbon:', min_value=0.0, value=28.0)
     trihalomethanes = st.number_input('Enter Trihalomethanes:', min_value=0.0, value=124.0)
-    turbidity = st.number_input('Enter Turbidity:', min_value=1.0, value=6.0)
+    turbidity = st.number_input('Enter Turbidity:', min_value=0.0, value=6.0)
 
     # ปุ่มทำนาย
     predict_button = st.button('Predict Water Quality')
